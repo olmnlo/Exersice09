@@ -26,7 +26,7 @@ public abstract class Product {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(double price) throws RuntimeException{
         if(price < 0){
             throw new RuntimeException("you can not enter negative number");
         }

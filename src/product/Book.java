@@ -4,8 +4,8 @@ public class Book extends Product{
     private String author;
 
     public Book(){
-        super("demo", 0);
-        author = "demo";
+        super("book", 0);
+        author = "author";
     }
 
     public Book(String name, double price, String author) {
