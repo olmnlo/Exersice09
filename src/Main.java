@@ -1,3 +1,4 @@
+import movable.Movable;
 import movable.MovablePoint;
 import product.Book;
 import product.Movie;
@@ -164,12 +165,12 @@ public class Main {
         System.out.println("movable_point2 get x_speed: "+ movable_point2.getX_speed());
         System.out.println("movable_point2 get Y_speed: "+ movable_point2.getY_speed());
 
-        movable_point2.setX(10);
-        movable_point2.setY(-10);
+        movable_point2.setX(20);
+        movable_point2.setY(-20);
         try {
 //            movable_point2.setX_speed(-10);
-            movable_point2.setX_speed(10);
-            movable_point2.setY_speed(30);
+            movable_point2.setX_speed(40);
+            movable_point2.setY_speed(10);
 //            movable_point2.setY_speed(-30);
         } catch (RuntimeException e) {
             System.err.println(e.getMessage());
@@ -202,8 +203,6 @@ public class Main {
         System.out.println("movable_point2 moveLeft y: "+ movable_point2.getY());
         System.out.println("movable_point2 moveLeft x_speed: "+ movable_point2.getX_speed());
         System.out.println("movable_point2 moveLeft Y_speed: "+ movable_point2.getY_speed());
-
-
 
 
 
