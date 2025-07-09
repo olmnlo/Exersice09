@@ -1,3 +1,4 @@
+import movable.MovablePoint;
 import product.Book;
 import product.Movie;
 import product.Product;
@@ -106,6 +107,106 @@ public class Main {
 
         //Q2
         System.out.println("Question 2");
+        MovablePoint movable_point = new MovablePoint();
+        System.out.println(movable_point);
+
+        System.out.println("movable_point get x: "+ movable_point.getX());
+        System.out.println("movable_point get y: "+ movable_point.getY());
+        System.out.println("movable_point get x_speed: "+ movable_point.getX_speed());
+        System.out.println("movable_point get Y_speed: "+ movable_point.getY_speed());
+
+        movable_point.setX(10);
+        movable_point.setY(-10);
+        try {
+//            movable_point.setX_speed(-10);
+            movable_point.setX_speed(10);
+            movable_point.setY_speed(30);
+//            movable_point.setY_speed(-30);
+        } catch (RuntimeException e) {
+            System.err.println(e.getMessage());
+        }
+
+        System.out.println("movable_point set x: "+ movable_point.getX());
+        System.out.println("movable_point set y: "+ movable_point.getY());
+        System.out.println("movable_point set x_speed: "+ movable_point.getX_speed());
+        System.out.println("movable_point set Y_speed: "+ movable_point.getY_speed());
+
+
+        System.out.println("Moving------------");
+        movable_point.moveUp();
+        System.out.println("movable_point moveUp x: "+ movable_point.getX());
+        System.out.println("movable_point moveUp y: "+ movable_point.getY());
+        System.out.println("movable_point moveUp x_speed: "+ movable_point.getX_speed());
+        System.out.println("movable_point moveUp Y_speed: "+ movable_point.getY_speed());
+        movable_point.moveDown();
+        System.out.println("movable_point moveDown x: "+ movable_point.getX());
+        System.out.println("movable_point moveDown y: "+ movable_point.getY());
+        System.out.println("movable_point moveDown x_speed: "+ movable_point.getX_speed());
+        System.out.println("movable_point moveDown Y_speed: "+ movable_point.getY_speed());
+        movable_point.moveRight();
+        System.out.println("movable_point moveRight x: "+ movable_point.getX());
+        System.out.println("movable_point moveRight y: "+ movable_point.getY());
+        System.out.println("movable_point moveRight x_speed: "+ movable_point.getX_speed());
+        System.out.println("movable_point moveRight Y_speed: "+ movable_point.getY_speed());
+        movable_point.moveLeft();
+        System.out.println("movable_point moveLeft x: "+ movable_point.getX());
+        System.out.println("movable_point moveLeft y: "+ movable_point.getY());
+        System.out.println("movable_point moveLeft x_speed: "+ movable_point.getX_speed());
+        System.out.println("movable_point moveLeft Y_speed: "+ movable_point.getY_speed());
+
+
+        MovablePoint movable_point2 = new MovablePoint(88, 33, 30, 30);
+
+        System.out.println(movable_point2);
+
+        System.out.println("movable_point2 get x: "+ movable_point2.getX());
+        System.out.println("movable_point2 get y: "+ movable_point2.getY());
+        System.out.println("movable_point2 get x_speed: "+ movable_point2.getX_speed());
+        System.out.println("movable_point2 get Y_speed: "+ movable_point2.getY_speed());
+
+        movable_point2.setX(10);
+        movable_point2.setY(-10);
+        try {
+//            movable_point2.setX_speed(-10);
+            movable_point2.setX_speed(10);
+            movable_point2.setY_speed(30);
+//            movable_point2.setY_speed(-30);
+        } catch (RuntimeException e) {
+            System.err.println(e.getMessage());
+        }
+
+        System.out.println("movable_point2 set x: "+ movable_point2.getX());
+        System.out.println("movable_point2 set y: "+ movable_point2.getY());
+        System.out.println("movable_point2 set x_speed: "+ movable_point2.getX_speed());
+        System.out.println("movable_point2 set Y_speed: "+ movable_point2.getY_speed());
+
+
+        System.out.println("Moving------------");
+        movable_point2.moveUp();
+        System.out.println("movable_point2 moveUp x: "+ movable_point2.getX());
+        System.out.println("movable_point2 moveUp y: "+ movable_point2.getY());
+        System.out.println("movable_point2 moveUp x_speed: "+ movable_point2.getX_speed());
+        System.out.println("movable_point2 moveUp Y_speed: "+ movable_point2.getY_speed());
+        movable_point2.moveDown();
+        System.out.println("movable_point2 moveDown x: "+ movable_point2.getX());
+        System.out.println("movable_point2 moveDown y: "+ movable_point2.getY());
+        System.out.println("movable_point2 moveDown x_speed: "+ movable_point2.getX_speed());
+        System.out.println("movable_point2 moveDown Y_speed: "+ movable_point2.getY_speed());
+        movable_point2.moveRight();
+        System.out.println("movable_point2 moveRight x: "+ movable_point2.getX());
+        System.out.println("movable_point2 moveRight y: "+ movable_point2.getY());
+        System.out.println("movable_point2 moveRight x_speed: "+ movable_point2.getX_speed());
+        System.out.println("movable_point2 moveRight Y_speed: "+ movable_point2.getY_speed());
+        movable_point2.moveLeft();
+        System.out.println("movable_point2 moveLeft x: "+ movable_point2.getX());
+        System.out.println("movable_point2 moveLeft y: "+ movable_point2.getY());
+        System.out.println("movable_point2 moveLeft x_speed: "+ movable_point2.getX_speed());
+        System.out.println("movable_point2 moveLeft Y_speed: "+ movable_point2.getY_speed());
+
+
+
+
+
 
 
 
