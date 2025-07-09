@@ -35,4 +35,11 @@ public abstract class Product {
 
     public abstract double getDiscount();
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

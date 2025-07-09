@@ -1,5 +1,8 @@
 import product.Book;
 import product.Movie;
+import product.Product;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +19,7 @@ public class Main {
         b1.setAuthor("Hussam");
         b1.setName("Java");
         try {
-            b1.setPrice(30); //no error
+            b1.setPrice(90); //no error
 //            b1.setPrice(-30); // error
         }catch (RuntimeException e){
             System.err.println(e.getMessage());
@@ -35,10 +38,10 @@ public class Main {
         System.out.println("b2 author: "+ b2.getAuthor());
         System.out.println("b2 discount 25%: "+ b2.getDiscount());
 
-        b2.setAuthor("Hussam");
-        b2.setName("Java");
+        b2.setAuthor("Faisal");
+        b2.setName("C++");
         try {
-            b2.setPrice(30); //no error
+            b2.setPrice(320); //no error
 //            b2.setPrice(-30); // error
         }catch (RuntimeException e){
             System.err.println(e.getMessage());
@@ -57,10 +60,10 @@ public class Main {
         System.out.println("movie1 director: "+ movie1.getDirector());
         System.out.println("movie1 discount 10%: "+ movie1.getDiscount());
 
-        movie1.setDirector("Hussam");
-        movie1.setName("Java");
+        movie1.setDirector("Omar");
+        movie1.setName("Saw");
         try {
-            movie1.setPrice(30); //no error
+            movie1.setPrice(140); //no error
 //            movie1.setPrice(-30); // error
         }catch (RuntimeException e){
             System.err.println(e.getMessage());
@@ -79,10 +82,10 @@ public class Main {
         System.out.println("movie2 director: "+ movie2.getDirector());
         System.out.println("movie2 discount 10%: "+ movie2.getDiscount());
 
-        movie2.setDirector("Hussam");
-        movie2.setName("Java");
+        movie2.setDirector("Leo");
+        movie2.setName("IT");
         try {
-            movie2.setPrice(30); //no error
+            movie2.setPrice(900); //no error
 //            movie2.setPrice(-30); // error
         }catch (RuntimeException e){
             System.err.println(e.getMessage());
@@ -92,8 +95,18 @@ public class Main {
         System.out.println("movie2 set director: "+ movie2.getDirector());
         System.out.println("movie2 set discount 25%: "+ movie2.getDiscount());
 
+        System.out.println("Products information--------------------------------");
+
+        ArrayList<Product> products = new ArrayList<>();
+        products.add(b1);
+        products.add(b2);
+        products.add(movie1);
+        products.add(movie2);
+        System.out.println(products);
+
         //Q2
-        System.out.println("Question 2--------------------------------");
+        System.out.println("Question 2");
+
 
 
 

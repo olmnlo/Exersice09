@@ -26,5 +26,11 @@ public class Book extends Product{
         return getPrice()-(getPrice()*0.10);
     }
 
-
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author='" + author + '\'' +
+                super.toString()+
+                '}';
+    }
 }

@@ -24,4 +24,12 @@ public class Movie extends Product{
     public double getDiscount() {
         return getPrice()-(getPrice()*0.25);
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "director='" + director + '\'' +
+                super.toString()+
+                '}';
+    }
 }
